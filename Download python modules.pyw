@@ -7,6 +7,12 @@ def closepyw():
 
 def notepad():
     os.system("start notepad")
+    
+def paint():
+    os.system("start mspaint")
+    
+def snip():
+    os.system("start snippingtool")
 
 def install():
     toinstall = entry.get()
@@ -24,6 +30,12 @@ button1.pack()
 
 button2 = tk.Button(text="Open notepad", command = notepad)
 button2.pack()
+
+button3 = tk.Button(text="Open paint", command = paint)
+button3.pack()
+
+button4 = tk.Button(text="Open snipping tool", command = snip)
+button4.pack()
 
 entry = tk.Entry()
 entry.pack()
